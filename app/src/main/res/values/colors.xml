@@ -2,6 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="btnColour">#d3d3d3</color>
-    <color name="bgColour">#ededed</color>
+    <color name="btnColour">#3C3C3C</color>
+    <color name="bgColour">#BEBEBE</color>
+    <color name="btnEquals">#FF8400</color>
+
 </resources>
