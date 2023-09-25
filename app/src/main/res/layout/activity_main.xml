@@ -10,6 +10,7 @@
 
 
     <TextView
+        android:id="@+id/tvInput"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="@drawable/tv_style"
@@ -58,15 +59,14 @@
             tools:ignore="HardcodedText" />
 
         <Button
-            android:id="@+id/btnDevide"
+            android:id="@+id/btnCLR"
             style="@style/btn_layout"
-            android:text="/"
-            android:onClick="btnClick"
+            android:text="CLR"
+            android:onClick="onClear"
             android:layout_weight="1"
             tools:ignore="HardcodedText" />
 
-
-    </LinearLayout>
+       </LinearLayout>
 
     <!--    section 4-->
     <LinearLayout
@@ -105,10 +105,9 @@
             android:id="@+id/btnMultiply"
             style="@style/btn_layout"
             android:text="*"
-            android:onClick="btnClick"
+            android:onClick="onOperator"
             android:layout_weight="1"
             tools:ignore="HardcodedText" />
-
 
     </LinearLayout>
 
@@ -146,17 +145,17 @@
             tools:ignore="HardcodedText" />
 
         <Button
-            android:id="@+id/btnMinus"
+            android:id="@+id/btnDevide"
             style="@style/btn_layout"
-            android:text="-"
-            android:onClick="btnClick"
             android:layout_weight="1"
+            android:onClick="onOperator"
+            android:text="/"
             tools:ignore="HardcodedText" />
 
 
     </LinearLayout>
 
-    <!--    section 0-->
+    <!--    section .-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -164,6 +163,14 @@
         android:layout_margin="2.5dp"
         android:layout_weight="1"
         >
+
+        <Button
+            android:id="@+id/btnDecimal"
+            style="@style/btn_layout"
+            android:text="."
+            android:onClick="onDecimal"
+            android:layout_weight="1"
+            tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/btnZero"
@@ -174,18 +181,10 @@
             tools:ignore="HardcodedText" />
 
         <Button
-            android:id="@+id/btnCLR"
+            android:id="@+id/btnMinus"
             style="@style/btn_layout"
-            android:text="CLR"
-            android:onClick="btnClick"
-            android:layout_weight="1"
-            tools:ignore="HardcodedText" />
-
-        <Button
-            android:id="@+id/btnPlus"
-            style="@style/btn_layout"
-            android:text="+"
-            android:onClick="btnClick"
+            android:text="-"
+            android:onClick="onOperator"
             android:layout_weight="1"
             tools:ignore="HardcodedText" />
 
@@ -206,9 +205,18 @@
             android:id="@+id/btnEquals"
             style="@style/btn_equals"
             android:text="="
-            android:onClick="btnClick"
+            android:onClick="onEqual"
+            android:layout_weight="3"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnPlus"
+            style="@style/btn_layout"
+            android:text="+"
+            android:onClick="onOperator"
             android:layout_weight="1"
             tools:ignore="HardcodedText" />
+
 
 
 
