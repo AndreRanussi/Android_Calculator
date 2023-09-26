@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                     tvInput?.text = (one.toDouble() - two.toDouble()).toString()
 
                 } else if (tvValue.contains("+")) {
-                    val splitValue = tvValue.split("-")
+                    val splitValue = tvValue.split("+")
                     var one = splitValue[0]
                     val two = splitValue[1]
                     if (prefix.isNotEmpty()) {
@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
                     tvInput?.text = (one.toDouble() + two.toDouble()).toString()
 
                 } else if (tvValue.contains("*")) {
-                    val splitValue = tvValue.split("-")
+                    val splitValue = tvValue.split("*")
                     var one = splitValue[0]
                     val two = splitValue[1]
                     if (prefix.isNotEmpty()) {
@@ -88,7 +88,7 @@ class MainActivity : AppCompatActivity() {
                     tvInput?.text = (one.toDouble() * two.toDouble()).toString()
 
                 } else if (tvValue.contains("/")) {
-                    val splitValue = tvValue.split("-")
+                    val splitValue = tvValue.split("/")
                     var one = splitValue[0]
                     val two = splitValue[1]
                     if (prefix.isNotEmpty()) {
