@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="@drawable/tv_style"
-        android:text="0"
+        android:text=""
         android:layout_marginEnd="7dp"
         android:layout_marginTop="7dp"
         android:layout_marginStart="7dp"
@@ -176,7 +176,15 @@
             style="@style/btn_layout"
             android:text="0"
             android:onClick="btnClick"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="@style/btn_layout"
+            android:text="DEL"
+            android:onClick="onDelete"
+            android:layout_weight="1"
             tools:ignore="HardcodedText" />
 
         <Button
